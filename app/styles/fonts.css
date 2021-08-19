@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Arial;
+    src: url(./fonts/Arial/Alef-Regular.ttf);
+}
+@font-face {
+    font-family: Georgia;
+    src: url(./fonts/Georgia/CodaCaption-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Impact;
+    src: url(./fonts/Impact/CodaCaption-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Tahoma;
+    src: url(./fonts/Tahoma/SignikaSC.ttf);
+}
+@font-face {
+    font-family:'Times New Roman';
+    src: url(./fonts/TimesNewRoman/Gupter-Medium.ttf)
+}
+@font-face {
+    font-family: Verdana;
+    src: url(./fonts/Verdana/RhodiumLibre-Regular.ttf);
+}

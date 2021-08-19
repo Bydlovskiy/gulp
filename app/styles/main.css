@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  HEADER BUTTONS*/
+
+.header {
+    width: 100%;
+    height: 15vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    min-height: 85vh;
+}
+
+.header .btn {
+    height: 50px;
+    color: black;
+    background-color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.cursive {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.through {
+    text-decoration: line-through;
+}
+
+.pblock {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: flex-start;
+}
+
+.left {
+    align-items: flex-start;
+}
+
+.center {
+    align-items: center;
+}
+
+.right {
+    align-items: flex-end;
+}
+
+/* TEXT COLOR BLOCK */
+.Container2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 1;
+}
+
+.styleBlock {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.styleHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+.styleTitle {
+    font-size: 30px;
+}
+
+.colorSmallBlock {
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+}
+
+.styleMainBlock {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* BACKGROUND BLOCK */
+
+[name=chooseColor],
+[name=chooseImage],
+[name=chooseFiles] {
+    height: 40px;
+}
+
+/* IMAGES */
+
+.backgroundImage {
+    width: 120px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+/* SIGN IN */
+
+.SignForm {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.wrongLog {
+    position: absolute;
+    width: 92%;
+    height: 25px;
+    bottom: 65px;
+    left: 20px;
+    color: red;
+    vertical-align: center;
+}
+
+.signOutBlock {
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+[name=cancelSignOut],
+[name=signOut] {
+    width: 42%;
+    height: 70%;
+}
+
+/* CREATE */
+
+textarea {
+    resize: none;
+    width: 100vw;
+    min-height: 85vh;
+    display: none;
+    font-size: 20px;
+    padding: 50px;
+}
+
+/* table */
+
+.tableHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+
+.tableTitle {
+    font-size: 30px;
+    src: url(./icons/);
+}
+
+form[name=tableForm] {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.borderStyleContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 44%;
+}
+
+.mb-2 {
+    width: 48%;
+}
+
+.mb-3 {
+    width: 44%;
+}
+
+[name=tableReset],
+[name=tableCreate] {
+    width: 44%;
+    height: 35px;
+}
+
+[name=borderStyle] {
+    height: 38px;
+    width: 100%;
+}
+
+/* olList */
+
+.mb-4 {
+    width: 100%;
+}
+
+[name=olListContainer][name=UlListContainer] .btn {
+    width: 49%;
+}

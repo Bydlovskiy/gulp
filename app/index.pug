@@ -1,0 +1,265 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We' crossorigin='anonymous')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css')
+  link(rel='stylesheet' href='./styles/css/main.min.css')
+.header
+  form(name='mainForm')
+    button.btn.btn-secondary(disabled='' type='button' name='createBtn')
+      img(style='width: 20px;height: 20px;' src='./icons/programming-code-signs.svg' alt='')
+    .btn-group.me-2
+      button.btn.btn-outline-secondary(name='bold' type='button')
+        i.bi.bi-type-bold
+      button.btn.btn-outline-secondary(name='cursive' type='button')
+        i.bi.bi-type-italic
+      button.btn.btn-outline-secondary(name='underLine' type='button')
+        i.bi.bi-type-underline
+      button.btn.btn-outline-secondary(name='through' type='button')
+        i.bi.bi-type-strikethrough
+    .btn-group.me-2
+      button.btn.btn-outline-secondary(name='start' type='button')
+        i.bi.bi-justify-left
+      button.btn.btn-outline-secondary(name='center' type='button')
+        i.bi.bi-text-center
+      button.btn.btn-outline-secondary(name='end' type='button')
+        i.bi.bi-justify-right
+    .btn-group
+      button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown')
+        img(style='width: 13px;height: 13px;' src='./icons/a.svg' alt='')
+      ul.dropdown-menu.fontFamily
+        li
+          a.dropdown-item(href='#') Arial
+        li
+          a.dropdown-item(href='#') Georgia
+        li
+          a.dropdown-item(href='#') Impact
+        li
+          a.dropdown-item(href='#') Tahoma
+        li
+          a.dropdown-item(href='#') Times New Roman
+        li
+          a.dropdown-item(href='#') Verdana
+      .btn-group
+        button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown')
+          img(style='width: 13px;height: 13px;' src='./icons/edit-text.svg')
+        ul.dropdown-menu.fontSize
+          li
+            a.dropdown-item(href='#') 16px
+          li
+            a.dropdown-item(href='#') 18px
+          li
+            a.dropdown-item(href='#') 20px
+          li
+            a.dropdown-item(href='#') 22px
+          li
+            a.dropdown-item(href='#') 24px
+          li
+            a.dropdown-item(href='#') 26px
+          li
+            a.dropdown-item(href='#') 28px
+          li
+            a.dropdown-item(href='#') 30px
+      button.btn.btn-secondary(name='textColorBtn' type='button')
+        img(style='width: 20px;height: 20px;' src='./icons/paint-board-and-brush.svg')
+      button.btn.btn-secondary(name='backgroundBtn' type='button')
+        img(style='width: 20px;height: 20px;' src='./icons/gallery.svg' alt='')
+    button.btn.btn-secondary(name='LogInBtn' type='button')
+      img(style='width: 20px;height: 20px;' src='./icons/lock.svg' alt='')
+  form(style='display: none;' name='secondForm')
+    .btn-group.me-2
+      button.btn.btn-outline-secondary(name='save' type='button')
+        img(style='height: 20px;width: 20px;' src='./icons/diskette.svg' alt='')
+      button.btn.btn-outline-secondary(name='table' type='button')
+        img(style='height: 20px;width: 20px;' src='./icons/table-grid.svg' alt='')
+      button.btn.btn-outline-secondary(name='olList' type='button')
+        img(style='height: 20px;width: 20px;' src='./icons/number-list.svg' alt='')
+      button.btn.btn-outline-secondary(name='UlList' type='button')
+        img(style='height: 20px;width: 20px;' src='./icons/listing.svg' alt='')
+.container1
+  textarea
+  .pblock
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aut facilis.
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aut facilis.
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aut facilis.
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aut facilis.
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aut facilis.
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aut facilis.
+.Container2(name='signOutContainer')
+  .signOutBlock
+    button.btn.btn-danger(name='cancelSignOut' type='button') Cansel
+    button.btn.btn-success(name='signOut' type='button') Sign out
+.Container2(name='textColorBlock')
+  .styleBlock
+    .styleHeader
+      p.styleTitle Close text color
+      img.closeBlock(name='closeColorBlock' style='width:15px; height: 15px;' src='./icons/close.svg' alt='')
+    .styleMainBlock
+      .colorSmallBlock(name='colorText' style='background-color: rgb(46, 156, 129);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(11, 100, 71);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(52, 172, 52);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(32, 109, 32);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(75, 75, 221);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(0, 0, 161);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(131, 36, 131);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(88, 2, 146);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(36, 54, 61);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(10, 5, 51);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(218, 181, 20);')
+      .colorSmallBlock(name='colorText' style='background-color: orange;')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(163, 106, 0);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(255, 123, 0);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(221, 62, 62);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(156, 4, 4);')
+      .colorSmallBlock(name='colorText' style='background-color: whitesmoke;')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(214, 205, 205);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(155, 146, 146);')
+      .colorSmallBlock(name='colorText' style='background-color: rgb(92, 86, 86);')
+      .colorSmallBlock(name='colorText' style='background-color: black;')
+.Container2(name='backgrounContainer')
+  .styleBlock(style='height: 340px;')
+    .styleHeader
+      p(style='font-size: 25px;') Choose background color or image 
+      img.closeBlock(name='closeBackgroundBlock' style='width:15px; height: 15px;' src='./icons/close.svg' alt='')
+    .backgroundChooseBlock
+      button.btn.btn-outline-secondary(name='chooseColor' type='button') Color
+      button.btn.btn-outline-secondary(name='chooseImage' type='button') Image
+      button.btn.btn-outline-secondary(name='chooseFiles' type='button') Files
+    .styleMainBlock(name='backgroundColorsPalette')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(46, 156, 129);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(11, 100, 71);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(52, 172, 52);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(32, 109, 32);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(75, 75, 221);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(0, 0, 161);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(131, 36, 131);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(88, 2, 146);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(36, 54, 61);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(10, 5, 51);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(218, 181, 20);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: orange;')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(163, 106, 0);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(255, 123, 0);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(221, 62, 62);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(156, 4, 4);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: whitesmoke;')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(214, 205, 205);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(155, 146, 146);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: rgb(92, 86, 86);')
+      .colorSmallBlock(name='colorBackgound' style='background-color: black;')
+    .styleMainBlock(style='display: none;' name='backgroundImageBlock')
+      img.backgroundImage(src='./images/wallpaper_thumb-960x460.jpg' alt='')
+      img.backgroundImage(src='./images/090336205.jpg' alt='')
+      img.backgroundImage(src='./images/Windows-10-wallpaper_1497290-1024x576-MM-90.jpg' alt='')
+      img.backgroundImage(src='./images/Дизайн-без-названия-2021-06-09T200549.220.jpg' alt='')
+      img.backgroundImage(src='./images/165083-retrovejv-legkovyye_avtomobili-audi_avant_2-synthwave-voda-550x310.jpg' alt='')
+      img.backgroundImage(src='./images/fb1d451409bc6046783d0a7564ea3adab088b1fe.jpg' alt='')
+      img.backgroundImage(src='./images/1572608828_2.jpg' alt='')
+      img.backgroundImage(src='./images/unnamed.jpg' alt='')
+      img.backgroundImage(src='./images/la-creazione-di-adamo.jpg' alt='')
+    .styleMainBlock(style='display: none; align-content: space-between;' name='backgroundFile')
+      input.form-control(name='inputFile' type='file' accept='image/*')
+.Container2(name='signInContainer')
+  .styleBlock(style='height: 320px;')
+    .styleHeader
+      p.styleTitle Sign In
+      img.closeBlock(name='closeSignBlock' style='width:15px; height: 15px;' src='./icons/close.svg' alt='')
+    form.SignForm
+      input.form-control(name='loginUser' placeholder='Login here...' type='text')
+      input.form-control(name='passwordUser' placeholder='Password here...' type='password')
+      p.wrongLog
+      button.btn.btn-secondary(name='signUserBtn' type='button') Sign in
+.Container2(name='tableContainer')
+  .styleBlock(style='width: 700px;height: 400px; padding: 30px;')
+    .styleHeader
+      p.styleTitle Create Table
+      img.closeBlock(name='closeTableBlock' style='width:15px; height: 15px;' src='./icons/close.svg' alt='')
+    form(name='tableForm')
+      .mb-3
+        label.form-label(for='formGroupExampleInput') Count TR:
+        input.form-control(name='countTr' placeholder='type here...' type='text')
+      .mb-3
+        label.form-label(for='formGroupExampleInput') Count TD:
+        input.form-control(name='countTd' placeholder='type here...' type='text')
+      .mb-3
+        label.form-label(for='formGroupExampleInput') Width of TD:
+        input.form-control(name='widthOfTd' placeholder='type here...' type='text')
+      .mb-3
+        label.form-label(for='formGroupExampleInput') Height of TD:
+        input.form-control(name='heightOfTd' placeholder='type here...' type='text')
+      .mb-3
+        label.form-label(for='formGroupExampleInput') Width of border:
+        input.form-control(name='borderWidth' placeholder='type here...' type='text')
+      .borderStyleContainer
+        .mb-2
+          label.form-label(for='formGroupExampleInput') Style of border:
+          select.form-select.form-select-sm(name='borderStyle')
+            option(selected='') choose style
+            option(value='dotted') dotted
+            option(value='dashed') dashed
+            option(value='solid') solid
+            option(value='double') double
+            option(value='groove') groove
+            option(value='ridge') ridge
+            option(value='inset') inset
+            option(value='outset') outset
+        .mb-2
+          label.form-label(for='formGroupExampleInput') Color of border:
+          select.form-select.form-select-sm(name='borerColor')
+            option(selected='') choose color
+            option(value='black') black
+            option(value='red') red
+            option(value='blue') blue
+            option(value='yellow') yellow
+            option(value='white') white
+            option(value='green') green
+            option(value='gray') gray
+            option(value='pink') pink
+      button.btn.btn-danger(name='tableReset' type='button') Reset
+      button.btn.btn-success(name='tableCreate' type='button') Create Table
+.Container2(name='olListContainer')
+  .styleBlock
+    .styleHeader
+      p.styleTitle Create Ol
+      img.closeBlock(name='closeOlListBlock' style='width:15px; height: 15px;' src='./icons/close.svg' alt='')
+    form(name='olList')
+      .mb-4
+        label.form-label(for='formGroupExampleInput') Count li item:
+        input.form-control(name='countLiOl' placeholder='type here...' type='text')
+      .mb-4
+        label.form-label(for='formGroupExampleInput') Color of border:
+        select.form-select.form-select-sm(name='OlListStyle')
+          option(selected='') choose Ol type mark
+          option(value='1') 1
+          option(value='I') I
+          option(value='i') i
+          option(value='A') A
+          option(value='a') a
+        select
+      button.btn.btn-danger(name='olListReset' type='button') Reset
+      button.btn.btn-success(name='olListCreate' type='button') Create list
+.Container2(name='UlListContainer')
+  .styleBlock
+    .styleHeader
+      p.styleTitle Create Ul
+      img.closeBlock(name='closeUlListBlock' style='width:15px; height: 15px;' src='./icons/close.svg' alt='')
+    form(name='UlList')
+      .mb-4
+        label.form-label(for='formGroupExampleInput') Count li item:
+        input.form-control(name='countLiUl' placeholder='type here...' type='text')
+      .mb-4
+        label.form-label(for='formGroupExampleInput') Color of border:
+        select.form-select.form-select-sm(name='UlListStyle')
+          option(selected='') choose Ul type mark
+          option(value='circle') circle
+          option(value='disc') disc
+          option(value='square') square
+        select
+      button.btn.btn-danger(name='UlListReset' type='button') Reset
+      button.btn.btn-success(name='UlListCreate' type='button') Create list
+script(src='./scripts/jquery-3.6.0.min.js')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js' integrity='sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj' crossorigin='anonymous')
+script(src='./scripts/main.min.js')
